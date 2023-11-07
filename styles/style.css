@@ -48,6 +48,7 @@ ol {
 }
 
 .content {
+  margin-top: 133px;
   place-items: end start;
   display: grid;
   place-content: center start;
