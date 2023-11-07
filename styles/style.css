@@ -91,6 +91,7 @@ ol {
 
 .content__card-link {
   display: block;
+  width: 394px;
   color: inherit;
   text-decoration: none;
   margin: 2px;
@@ -100,6 +101,7 @@ ol {
   place-content: start space-between;
   display: grid;
   grid-template-columns: auto auto;
+  width: 394px;
   padding: 2px;
 }
 
@@ -108,6 +110,9 @@ ol {
   overflow: hidden;
   flex-flow: column nowrap;
   row-gap: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
 }
 
 .content__video-card-title {
@@ -179,6 +184,7 @@ fieldset {
   width: fit-content;
   column-gap: 5px;
   flex-flow: row nowrap;
+  align-items: center;
 }
 
 button,
@@ -192,8 +198,8 @@ button,
   min-height: 27px;
   border-right: none;
   border-left: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   background-color: transparent;
   color: inherit;
   font-family: inherit;
@@ -219,12 +225,14 @@ button,
   height: 17px;
   outline: 1px solid #fff;
   outline-offset: 1px;
+  /* Добавлены отступы */
+  padding: 2px;
 }
 
 .button {
   padding-top: 6px;
   padding-bottom: 6px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-color: transparent;
   color: inherit;
   font-family: inherit;
@@ -240,7 +248,7 @@ button,
 }
 
 .more-button {
-  max-width: 100%;
+  width: 100%;
 }
 
 .search-form__textfield:focus {
@@ -298,7 +306,6 @@ button,
 }
 
 .content__card-link:hover {
-  text-underline-position: under;
   text-decoration: underline;
 }
 
